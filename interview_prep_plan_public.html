@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohasin — 4-Month Interview Prep Plan 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #f8f7f4;
+    --surface: #ffffff;
+    --border: #e2e0da;
+    --text: #1a1a18;
+    --muted: #6b6b66;
+    --teal: #0f7563;
+    --teal-lt: #e1f4ef;
+    --teal-md: #1d9e75;
+    --amber: #b87215;
+    --amber-lt: #fdf0db;
+    --red: #c13333;
+    --red-lt: #fceaea;
+    --purple: #5a47cc;
+    --purple-lt: #eeedfe;
+    --blue: #1a5fab;
+    --blue-lt: #e5f0fb;
+    --gray-lt: #f1efe8;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+  body { font-family: var(--sans); background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.65; }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Layout */
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+  /* Hero */
+  .hero { background: var(--text); color: #fff; border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem; }
+  .hero-label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-md); margin-bottom: 0.5rem; }
+  .hero h1 { font-size: 26px; font-weight: 600; margin-bottom: 0.4rem; }
+  .hero-sub { font-size: 14px; color: #a0a09a; margin-bottom: 1.5rem; }
+  .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #333330; border: 1px solid #333330; border-radius: 8px; overflow: hidden; }
+  .stat { background: #222220; padding: 0.9rem 1rem; }
+  .stat-val { font-size: 22px; font-weight: 600; color: #fff; }
+  .stat-key { font-size: 11px; color: #888884; margin-top: 2px; }
+
+  /* Section */
+  .sec-title { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 2.5rem 0 1rem; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+
+  /* Phase header */
+  .phase { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin-bottom: 1.5rem; overflow: hidden; }
+  .phase-header { display: flex; align-items: center; gap: 1rem; padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border); }
+  .phase-num { font-family: var(--mono); font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 99px; }
+  .ph1 { background: var(--teal-lt); color: var(--teal); }
+  .ph2 { background: var(--amber-lt); color: var(--amber); }
+  .ph3 { background: var(--purple-lt); color: var(--purple); }
+  .ph4 { background: var(--blue-lt); color: var(--blue); }
+  .phase-title { font-size: 16px; font-weight: 600; }
+  .phase-sub { font-size: 12px; color: var(--muted); margin-top: 1px; }
+  .phase-goal { margin-left: auto; font-size: 12px; background: var(--gray-lt); padding: 4px 12px; border-radius: 99px; color: var(--muted); white-space: nowrap; }
+  .phase-body { padding: 1.2rem 1.5rem; }
+
+  /* Week grid */
+  .week-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1rem; }
+  .week { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .week-header { padding: 8px 12px; font-size: 12px; font-weight: 500; display: flex; justify-content: space-between; align-items: center; }
+  .wk-teal { background: var(--teal-lt); color: var(--teal); }
+  .wk-amber { background: var(--amber-lt); color: var(--amber); }
+  .wk-purple { background: var(--purple-lt); color: var(--purple); }
+  .wk-blue { background: var(--blue-lt); color: var(--blue); }
+  .week-body { padding: 10px 12px; }
+  .wk-label { font-size: 10px; font-family: var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 6px 0 3px; }
+  .wk-item { font-size: 12px; line-height: 1.55; color: var(--text); margin-bottom: 2px; display: flex; gap: 6px; }
+  .wk-item::before { content: "—"; color: var(--border); flex-shrink: 0; }
+  .time-split { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+  .time-block { border-radius: 6px; padding: 7px 9px; }
+  .tb-home { background: var(--teal-lt); }
+  .tb-office { background: var(--blue-lt); }
+  .tb-label { font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; margin-bottom: 3px; }
+  .tb-text { font-size: 11px; color: var(--text); line-height: 1.5; }
+
+  /* Topic library */
+  .topic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .topic-card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .tc-header { padding: 10px 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); }
+  .tc-icon { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
+  .tc-title { font-size: 13px; font-weight: 500; }
+  .tc-level { font-size: 10px; font-family: var(--mono); padding: 1px 7px; border-radius: 99px; }
+  .tc-body { padding: 10px 14px; }
+  .res-row { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 7px; }
+  .res-tag { font-size: 9px; font-family: var(--mono); padding: 2px 6px; border-radius: 3px; white-space: nowrap; margin-top: 1px; flex-shrink: 0; text-transform: uppercase; }
+  .tag-yt { background: #fde8e8; color: #c0392b; }
+  .tag-course { background: var(--teal-lt); color: var(--teal); }
+  .tag-article { background: var(--purple-lt); color: var(--purple); }
+  .tag-docs { background: var(--gray-lt); color: var(--muted); }
+  .tag-book { background: var(--amber-lt); color: var(--amber); }
+  .tag-practice { background: var(--blue-lt); color: var(--blue); }
+  .res-content { font-size: 12px; }
+  .res-title { color: var(--text); font-weight: 500; display: block; }
+  .res-desc { color: var(--muted); font-size: 11px; margin-top: 1px; display: block; }
+
+  /* Claude interaction box */
+  .claude-box { background: var(--text); color: #fff; border-radius: 10px; padding: 1.5rem; margin-top: 2rem; }
+  .claude-box h3 { font-size: 15px; margin-bottom: 0.7rem; }
+  .prompt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+  .prompt-chip { background: #2a2a28; border: 1px solid #3a3a38; border-radius: 6px; padding: 7px 10px; font-size: 11px; color: #c0c0ba; font-family: var(--mono); cursor: pointer; }
+
+  /* Timeline strip */
+  .timeline { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 2rem; }
+  .tl-cell { padding: 1rem; border-right: 1px solid var(--border); }
+  .tl-cell:last-child { border-right: none; }
+  .tl-phase { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+  .tl-month { font-size: 15px; font-weight: 600; }
+  .tl-desc { font-size: 11px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+  .tl-pills { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .tl-pill { font-size: 10px; padding: 1px 7px; border-radius: 99px; }
+
+  /* Info callout */
+  .notice-banner { background: var(--amber-lt); border: 1px solid #e8c87a; border-radius: 8px; padding: 10px 14px; display: flex; gap: 10px; align-items: flex-start; margin: 1rem 0; }
+  .notice-text { font-size: 12px; color: #7a5000; line-height: 1.5; }
+
+  /* Daily schedule */
+  .sched-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .sched-card { border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+  .sched-title { font-size: 13px; font-weight: 500; margin-bottom: 8px; }
+  .sched-row { display: flex; justify-content: space-between; font-size: 12px; padding: 4px 0; border-bottom: 1px solid var(--border); }
+  .sched-row:last-child { border-bottom: none; }
+  .sched-time { color: var(--muted); font-family: var(--mono); font-size: 11px; }
+  .sched-act { color: var(--text); }
+
+  @media (max-width: 700px) {
+    .week-grid, .topic-grid, .sched-grid, .prompt-grid, .time-split { grid-template-columns: 1fr; }
+    .timeline { grid-template-columns: 1fr 1fr; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .tl-cell { border-right: none; border-bottom: 1px solid var(--border); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">Interview Preparation Plan 2026</div>
+  <h1>Mohasin Momin — DS → Senior AI/ML Engineer</h1>
+  <div class="hero-sub">4.5 yr experience · Pune · GenAI · RAG · Agentic AI · LLMs · Azure</div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-val">4</div><div class="stat-key">Months total</div></div>
+    <div class="stat"><div class="stat-val">~136 hrs</div><div class="stat-key">Per month</div></div>
+    <div class="stat"><div class="stat-val">11</div><div class="stat-key">Topic domains</div></div>
+    <div class="stat"><div class="stat-val">60+</div><div class="stat-key">Curated resources</div></div>
+  </div>
+</div>
+
+<!-- OVERVIEW TIMELINE -->
+<div class="sec-title">4-Month Overview</div>
+<div class="timeline">
+  <div class="tl-cell" style="background: #e8f5f0;">
+    <div class="tl-phase" style="color: var(--teal);">Phase 1</div>
+    <div class="tl-month">Month 1</div>
+    <div class="tl-desc">Foundation sprint. Strengthen core skills, build GitHub portfolio, polish resume and LinkedIn.</div>
+    <div class="tl-pills">
+      <span class="tl-pill" style="background:var(--teal-lt);color:var(--teal);">ML revision</span>
+      <span class="tl-pill" style="background:var(--teal-lt);color:var(--teal);">DL + NLP</span>
+      <span class="tl-pill" style="background:var(--teal-lt);color:var(--teal);">GenAI deep dive</span>
+      <span class="tl-pill" style="background:var(--teal-lt);color:var(--teal);">Resume + Apply</span>
+    </div>
+  </div>
+  <div class="tl-cell" style="background: #fdf6e8;">
+    <div class="tl-phase" style="color: var(--amber);">Phase 2</div>
+    <div class="tl-month">Month 2</div>
+    <div class="tl-desc">MLOps + Azure. First interviews. Technical rounds focus.</div>
+    <div class="tl-pills">
+      <span class="tl-pill" style="background:var(--amber-lt);color:var(--amber);">MLOps</span>
+      <span class="tl-pill" style="background:var(--amber-lt);color:var(--amber);">Azure AI-103</span>
+      <span class="tl-pill" style="background:var(--amber-lt);color:var(--amber);">Coding practice</span>
+      <span class="tl-pill" style="background:var(--amber-lt);color:var(--amber);">Interviews start</span>
+    </div>
+  </div>
+  <div class="tl-cell" style="background: #f3f1fd;">
+    <div class="tl-phase" style="color: var(--purple);">Phase 3</div>
+    <div class="tl-month">Month 3</div>
+    <div class="tl-desc">Advanced topics. System design. Mid-level to senior rounds.</div>
+    <div class="tl-pills">
+      <span class="tl-pill" style="background:var(--purple-lt);color:var(--purple);">System Design</span>
+      <span class="tl-pill" style="background:var(--purple-lt);color:var(--purple);">Fine-tuning</span>
+      <span class="tl-pill" style="background:var(--purple-lt);color:var(--purple);">LangGraph</span>
+      <span class="tl-pill" style="background:var(--purple-lt);color:var(--purple);">Stats depth</span>
+    </div>
+  </div>
+  <div class="tl-cell" style="background: #e8f0fc;">
+    <div class="tl-phase" style="color: var(--blue);">Phase 4</div>
+    <div class="tl-month">Month 4</div>
+    <div class="tl-desc">Interview blitz. Behavioral. Offers, negotiation, transition.</div>
+    <div class="tl-pills">
+      <span class="tl-pill" style="background:var(--blue-lt);color:var(--blue);">Final rounds</span>
+      <span class="tl-pill" style="background:var(--blue-lt);color:var(--blue);">STAR stories</span>
+      <span class="tl-pill" style="background:var(--blue-lt);color:var(--blue);">Negotiation</span>
+      <span class="tl-pill" style="background:var(--blue-lt);color:var(--blue);">Select offer</span>
+    </div>
+  </div>
+</div>
+
+<!-- DAILY SCHEDULE -->
+<div class="sec-title">Daily Time Allocation</div>
+<div class="sched-grid" style="margin-bottom:2rem;">
+  <div class="sched-card">
+    <div class="sched-title">🏠 Home — 3–4 hrs (Personal laptop)</div>
+    <div class="sched-row"><span class="sched-act">Hands-on coding / project work</span><span class="sched-time">60–90 min</span></div>
+    <div class="sched-row"><span class="sched-act">Concept study (courses, docs)</span><span class="sched-time">60–75 min</span></div>
+    <div class="sched-row"><span class="sched-act">Claude quizzes / topic review</span><span class="sched-time">30 min</span></div>
+    <div class="sched-row"><span class="sched-act">LeetCode / problem solving</span><span class="sched-time">30 min</span></div>
+  </div>
+  <div class="sched-card">
+    <div class="sched-title">🏢 Office — 1–3 hrs (No personal login)</div>
+    <div class="sched-row"><span class="sched-act">YouTube (no login needed)</span><span class="sched-time">60–90 min</span></div>
+    <div class="sched-row"><span class="sched-act">Read articles / blog posts</span><span class="sched-time">30–45 min</span></div>
+    <div class="sched-row"><span class="sched-act">Microsoft Learn / public docs</span><span class="sched-time">30 min</span></div>
+    <div class="sched-row"><span class="sched-act">Review notes / flashcards</span><span class="sched-time">15–20 min</span></div>
+  </div>
+</div>
+
+<!-- PHASE 1 -->
+<div class="sec-title">Phase 1 — Month 1: Foundation Sprint</div>
+<div class="notice-banner">
+  <span style="font-size:16px;">🎯</span>
+  <div class="notice-text"><strong>Goal:</strong> Solidify core knowledge, build 2–3 GitHub repos, polish resume + LinkedIn, start applying to 5–10 companies.</div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph1">Week 1</span>
+    <div><div class="phase-title">ML Fundamentals + Python Polish</div><div class="phase-sub">Refresh core concepts recruiters always test</div></div>
+    <span class="phase-goal">~34 hrs total</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-teal"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">ML Theory</div>
+          <div class="wk-item">Bias-variance tradeoff, overfitting, regularization (L1/L2)</div>
+          <div class="wk-item">Decision trees, Random Forest, Gradient Boosting, XGBoost</div>
+          <div class="wk-item">SVM, KNN, Naive Bayes — when & why to use each</div>
+          <div class="wk-item">Evaluation: precision, recall, F1, AUC-ROC, confusion matrix</div>
+          <div class="wk-item">Cross-validation strategies, stratified K-fold</div>
+          <div class="wk-label">Python</div>
+          <div class="wk-item">OOP — classes, inheritance, dunder methods</div>
+          <div class="wk-item">Decorators, generators, context managers</div>
+          <div class="wk-item">Pandas tricks interviewers love (groupby, merge, pivot)</div>
+          <div class="wk-item">NumPy vectorization, broadcasting</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-teal"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Code 5 ML models from scratch (no sklearn). Write Pandas + NumPy exercises. Push to GitHub.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">StatQuest ML playlist on YouTube. Read Towards Data Science articles on ensemble methods.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Deliverable</div>
+          <div class="wk-item">GitHub repo: <code>ml-from-scratch</code> with 5 algorithms implemented</div>
+          <div class="wk-item">Anki flashcards for 20 key ML concepts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph1">Week 2</span>
+    <div><div class="phase-title">Deep Learning — CNN, LSTM, Transformers</div><div class="phase-sub">Your strong area — frame it as expertise, not just experience</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-teal"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">Deep Learning Core</div>
+          <div class="wk-item">Backpropagation — derive it by hand at least once</div>
+          <div class="wk-item">Batch Norm, Layer Norm, Dropout — why each works</div>
+          <div class="wk-item">Learning rate schedulers, optimizers (Adam vs SGD vs AdamW)</div>
+          <div class="wk-item">CNN architecture — receptive field, pooling, feature maps</div>
+          <div class="wk-item">LSTM — gates explained, vanishing gradient fix</div>
+          <div class="wk-label">Transformers (Critical for LLM interviews)</div>
+          <div class="wk-item">Self-attention mechanism — Q, K, V explained with math</div>
+          <div class="wk-item">Multi-head attention, positional encoding</div>
+          <div class="wk-item">Encoder-only (BERT), decoder-only (GPT), encoder-decoder (T5)</div>
+          <div class="wk-item">Tokenization — BPE, WordPiece, SentencePiece</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-teal"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Andrej Karpathy's "makemore" / GPT from scratch video. Implement attention in PyTorch. Add to GitHub.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">3Blue1Brown Neural Net series + Jay Alammar's Illustrated Transformer (read, no login needed).</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Deliverable</div>
+          <div class="wk-item">GitHub repo: <code>transformers-from-scratch</code> — tiny GPT in PyTorch</div>
+          <div class="wk-item">Be able to whiteboard attention mechanism in 5 mins</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph1">Week 3</span>
+    <div><div class="phase-title">NLP + LLMs + RAG + Agentic AI — Deep Polish</div><div class="phase-sub">Your core expertise — make it interview-ready and articulable</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-teal"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">LLMs</div>
+          <div class="wk-item">RLHF — reward model, PPO, why it matters for alignment</div>
+          <div class="wk-item">Inference optimization — KV cache, quantization (INT8/INT4)</div>
+          <div class="wk-item">Context window, attention sink, RoPE positional embeddings</div>
+          <div class="wk-item">Prompt engineering — zero-shot, few-shot, chain-of-thought</div>
+          <div class="wk-label">RAG (Your strength — go expert-level)</div>
+          <div class="wk-item">Naive RAG vs Advanced RAG vs Modular RAG</div>
+          <div class="wk-item">Chunking strategies — fixed, semantic, recursive</div>
+          <div class="wk-item">Hybrid retrieval — dense + sparse (BM25 + embeddings)</div>
+          <div class="wk-item">Re-ranking, HyDE, query expansion</div>
+          <div class="wk-item">RAGAS evaluation framework — faithfulness, relevancy</div>
+          <div class="wk-label">Agentic AI</div>
+          <div class="wk-item">ReAct, Plan-and-Execute, Reflexion patterns</div>
+          <div class="wk-item">Tool calling, function calling in OpenAI + Anthropic APIs</div>
+          <div class="wk-item">Memory types — in-context, external (MongoDB/Redis), episodic</div>
+          <div class="wk-item">Multi-agent coordination — CrewAI patterns you've used</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-teal"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Build a clean RAG demo with ChromaDB + LangChain. Document it properly. This becomes a portfolio piece.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">Lilian Weng's LLM blog posts (lilianweng.github.io). AssemblyAI RAG YouTube playlist. LangChain YouTube channel.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Deliverable</div>
+          <div class="wk-item">GitHub repo: <code>rag-portfolio</code> — clean RAG app with evaluation</div>
+          <div class="wk-item">Written explanation of each RAG concept in your own words</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph1">Week 4</span>
+    <div><div class="phase-title">Resume + LinkedIn + GitHub + Apply</div><div class="phase-sub">The execution week — all prep leads here</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-teal"><span>Tasks</span></div>
+        <div class="week-body">
+          <div class="wk-label">Resume (Days 1–2)</div>
+          <div class="wk-item">Add 3-line professional summary at top</div>
+          <div class="wk-item">Reorder skills: LLMs → GenAI → RAG → Agentic AI → Python → PyTorch → LangChain → CrewAI → Azure</div>
+          <div class="wk-item">Remove education percentages (60% hurts you)</div>
+          <div class="wk-item">Add GitHub link + target role keywords</div>
+          <div class="wk-label">LinkedIn (Day 3)</div>
+          <div class="wk-item">Update headline: "AI Engineer | GenAI · RAG · Agentic AI · LLMs | Azure"</div>
+          <div class="wk-item">Add "Open to work" (visible to recruiters only)</div>
+          <div class="wk-item">Write 3 featured posts about your projects</div>
+          <div class="wk-label">Applications (Days 4–7)</div>
+          <div class="wk-item">Apply to 10 companies on LinkedIn/Naukri/Instahyre</div>
+          <div class="wk-item">Target: GenAI Engineer, LLM Engineer, AI Engineer, Senior DS</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-teal"><span>Where to apply</span></div>
+        <div class="week-body">
+          <div class="wk-label">Platforms (Pune + Remote)</div>
+          <div class="wk-item"><a href="https://www.linkedin.com/jobs/" target="_blank">LinkedIn Jobs</a> — filter "GenAI" or "LLM Engineer"</div>
+          <div class="wk-item"><a href="https://www.naukri.com" target="_blank">Naukri.com</a> — highest recruiter density in India</div>
+          <div class="wk-item"><a href="https://instahyre.com" target="_blank">Instahyre</a> — product startups, good AI roles</div>
+          <div class="wk-item"><a href="https://wellfound.com" target="_blank">Wellfound (AngelList)</a> — remote-first startups (US/EU pay)</div>
+          <div class="wk-item"><a href="https://www.ycombinator.com/jobs" target="_blank">YC Jobs</a> — high-quality AI startups</div>
+          <div class="wk-item"><a href="https://cutshort.io" target="_blank">Cutshort</a> — curated India tech jobs</div>
+          <div class="wk-label">Target companies (Pune)</div>
+          <div class="wk-item">Persistent Systems, Cummins India, KPIT, Infosys Pune AI COE</div>
+          <div class="wk-item">Pharma: Cipla, Sun Pharma, Lupin (your domain advantage)</div>
+          <div class="wk-item">GCCs: Deutsche Bank, Barclays, Mastercard, Red Hat (Pune)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE 2 -->
+<div class="sec-title">Phase 2 — Month 2: MLOps + Technical Interviews</div>
+<div class="notice-banner">
+  <span style="font-size:16px;">📅</span>
+  <div class="notice-text"><strong>Month 2 focus:</strong> Balance active interviews with learning MLOps (your biggest gap). Aim for 3–4 interview processes running in parallel. Expect screening + first technical rounds this month.</div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph2">Week 5</span>
+    <div><div class="phase-title">MLOps — The Gap Filler</div><div class="phase-sub">This is what separates mid-level from senior in 2026 interviews</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-amber"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">MLOps Core</div>
+          <div class="wk-item">ML lifecycle: data → training → evaluation → deployment → monitoring</div>
+          <div class="wk-item">MLflow — experiment tracking, model registry, artifact logging</div>
+          <div class="wk-item">Docker basics — Dockerfile, container, image, compose</div>
+          <div class="wk-item">CI/CD for ML — GitHub Actions workflows for model retraining</div>
+          <div class="wk-item">Model monitoring — data drift, concept drift, performance decay</div>
+          <div class="wk-item">Feature stores — purpose, Feast overview</div>
+          <div class="wk-label">GenAIOps (AI-300 territory)</div>
+          <div class="wk-item">LLM evaluation metrics — BLEU, ROUGE, RAGAS, LLM-as-judge</div>
+          <div class="wk-item">Prompt versioning and management</div>
+          <div class="wk-item">Observability — LangSmith, Arize Phoenix, logging LLM calls</div>
+          <div class="wk-item">Guardrails — NeMo Guardrails, output validation</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-amber"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Set up MLflow locally. Track experiments from one of your existing projects. Build a simple Docker container for a model API (FastAPI + Docker).</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">DataTalksClub MLOps Zoomcamp YouTube. Made With ML articles on MLOps. AI-300 study guide on Microsoft Learn.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Deliverable</div>
+          <div class="wk-item">Add "MLflow, Docker, GitHub Actions, model monitoring" to resume</div>
+          <div class="wk-item">GitHub: containerized ML model with tracking</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph2">Week 6</span>
+    <div><div class="phase-title">Azure AI Services + AI-103 Study Start</div><div class="phase-sub">Deepen Azure beyond VM deployment — employers want Azure-native thinking</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-amber"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">Azure AI Services</div>
+          <div class="wk-item">Azure OpenAI Service — deployments, endpoints, API</div>
+          <div class="wk-item">Azure AI Foundry — project setup, model catalog, agents</div>
+          <div class="wk-item">Azure AI Search — vector search, semantic ranking, hybrid</div>
+          <div class="wk-item">Azure Document Intelligence — form recognizer, layout model</div>
+          <div class="wk-item">Azure ML Studio — pipelines, datasets, compute clusters</div>
+          <div class="wk-label">Azure Computer Vision + Language</div>
+          <div class="wk-item">Azure AI Vision — OCR, image analysis, custom model</div>
+          <div class="wk-item">Azure Language Service — NER, sentiment, summarization</div>
+          <div class="wk-item">Content Safety API — moderation filters</div>
+          <div class="wk-label">Deployment patterns</div>
+          <div class="wk-item">Azure Container Apps, Azure Functions for ML APIs</div>
+          <div class="wk-item">Managed endpoints vs. container deployments</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-amber"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Microsoft Learn sandbox (free, no credit card). Work through Azure AI Foundry quickstart. Build a small agent using Azure OpenAI.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">Microsoft Learn YouTube channel — Azure AI Foundry videos. AI-103 study guide (public PDF, no login). John Savill's Azure YouTube content.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Note</div>
+          <div class="wk-item">AI-103 goes GA ~June 2026. Register to sit it in your first week of GA.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph2">Week 7</span>
+    <div><div class="phase-title">Coding Interviews + SQL + Probability</div><div class="phase-sub">The "filter" rounds — don't let basics trip you up</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-amber"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">Python / Coding</div>
+          <div class="wk-item">Arrays, strings, hashmaps — most common DS interview patterns</div>
+          <div class="wk-item">Two pointers, sliding window, binary search</div>
+          <div class="wk-item">Tree traversals (BFS, DFS) — comes up for graph ML questions</div>
+          <div class="wk-item">Dynamic programming — Easy level only (knapsack, LCS)</div>
+          <div class="wk-label">SQL (often tested for DS roles)</div>
+          <div class="wk-item">Window functions: ROW_NUMBER, RANK, LAG, LEAD, NTILE</div>
+          <div class="wk-item">CTEs (WITH clause), subqueries vs joins performance</div>
+          <div class="wk-item">Group by + HAVING, self joins, exists vs in</div>
+          <div class="wk-label">Probability & Statistics</div>
+          <div class="wk-item">Bayes theorem — derive it, explain in plain English</div>
+          <div class="wk-item">CLT, hypothesis testing (t-test, chi-square, p-value interpretation)</div>
+          <div class="wk-item">A/B testing — sample size, statistical power, Type I/II errors</div>
+          <div class="wk-item">Distributions — normal, binomial, Poisson, exponential</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-amber"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">LeetCode — 2 Easy + 1 Medium daily. NeetCode roadmap (Arrays & Hashing first). SQLZoo or StrataScratch SQL practice.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">StatQuest Statistics playlist. Khan Academy Statistics videos (no login). Interview stats question walkthroughs on YouTube.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Target</div>
+          <div class="wk-item">Solve 30 LeetCode problems total by end of Phase 2</div>
+          <div class="wk-item">Complete 15 SQL problems on StrataScratch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph2">Week 8</span>
+    <div><div class="phase-title">Mock Interviews + Interview Process Tracking</div><div class="phase-sub">Practice articulating — technical skill alone doesn't close offers</div></div>
+    <span class="phase-goal">~34 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-amber"><span>Focus areas</span></div>
+        <div class="week-body">
+          <div class="wk-label">Self-mock interviews</div>
+          <div class="wk-item">Record yourself explaining Transformer architecture in 5 minutes</div>
+          <div class="wk-item">Explain your RAG system to a non-technical stakeholder</div>
+          <div class="wk-item">Walk through Agentic AI validation project end to end</div>
+          <div class="wk-item">Come to Claude for topic quizzes and concept checks</div>
+          <div class="wk-label">Interview process management</div>
+          <div class="wk-item">Track all applications in a spreadsheet (company, round, date, status)</div>
+          <div class="wk-item">Research each company before each round (Glassdoor, LinkedIn)</div>
+          <div class="wk-item">Prepare 5 project STAR stories (quantified impact)</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-amber"><span>Common interview questions — this level</span></div>
+        <div class="week-body">
+          <div class="wk-item">"Explain how RAG works and when you'd use it vs fine-tuning"</div>
+          <div class="wk-item">"How did you evaluate your agentic AI system?"</div>
+          <div class="wk-item">"What metrics did you use for protein stability prediction?"</div>
+          <div class="wk-item">"How would you detect if your LLM output is degrading in production?"</div>
+          <div class="wk-item">"Walk me through your CNN architecture choices"</div>
+          <div class="wk-item">"How does attention mechanism differ from RNN hidden state?"</div>
+          <div class="wk-item">"Design a document Q&A system for 1M PDFs"</div>
+          <div class="wk-item">"How would you handle hallucinations in your RAG pipeline?"</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE 3 -->
+<div class="sec-title">Phase 3 — Month 3: Advanced Topics + System Design</div>
+<div class="notice-banner">
+  <span style="font-size:16px;">🚀</span>
+  <div class="notice-text"><strong>This is peak interview activity.</strong> You're likely in multiple 2nd and 3rd rounds. Continue learning advanced topics while actively interviewing. Sit AI-103 exam this month if it's GA.</div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph3">Week 9–10</span>
+    <div><div class="phase-title">LLM Fine-tuning + Vector DBs + Advanced Agentic Patterns</div><div class="phase-sub">Senior-level differentiators — most candidates don't go this deep</div></div>
+    <span class="phase-goal">~68 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-purple"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">Fine-tuning</div>
+          <div class="wk-item">Full fine-tuning vs parameter-efficient (LoRA, QLoRA, prefix tuning)</div>
+          <div class="wk-item">LoRA math — rank decomposition, alpha, target modules</div>
+          <div class="wk-item">Training data format — instruction tuning (Alpaca format)</div>
+          <div class="wk-item">When to fine-tune vs RAG vs prompt engineering — decision framework</div>
+          <div class="wk-item">HuggingFace PEFT + trl library for SFT, DPO</div>
+          <div class="wk-label">Vector Databases</div>
+          <div class="wk-item">FAISS, ChromaDB, Pinecone, Weaviate, Qdrant — trade-offs</div>
+          <div class="wk-item">HNSW algorithm for ANN search — intuition</div>
+          <div class="wk-item">Embedding models — all-MiniLM, BGE, OpenAI ada-002, Cohere</div>
+          <div class="wk-item">Filtering, metadata, hybrid search implementation</div>
+          <div class="wk-label">LangGraph + Advanced Agents</div>
+          <div class="wk-item">LangGraph — stateful, cyclical graphs for agents</div>
+          <div class="wk-item">Conditional edges, human-in-the-loop, checkpointers</div>
+          <div class="wk-item">Multi-agent supervisor pattern vs. hierarchical crews</div>
+          <div class="wk-item">Agent evaluation — trajectory accuracy, tool use correctness</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-purple"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Fine-tune a small Llama model using QLoRA on Colab (free GPU). Build a LangGraph multi-agent flow. Add vector DB comparison notebook to GitHub.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">DeepLearning.AI fine-tuning YouTube previews. LangGraph official docs (public). Hugging Face YouTube channel — PEFT and TRL videos.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Deliverable</div>
+          <div class="wk-item">GitHub: fine-tuned model notebook (even small Llama-3.2-1B)</div>
+          <div class="wk-item">GitHub: LangGraph multi-agent example</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph3">Week 11–12</span>
+    <div><div class="phase-title">ML System Design + Pharma AI Niche Story</div><div class="phase-sub">System design separates Senior from Mid-level — and your pharma domain is a USP</div></div>
+    <span class="phase-goal">~68 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-purple"><span>Topics to cover</span></div>
+        <div class="week-body">
+          <div class="wk-label">ML System Design Framework</div>
+          <div class="wk-item">Clarify requirements → Estimate scale → High-level architecture</div>
+          <div class="wk-item">Data pipeline → Feature store → Model training → Serving → Monitoring</div>
+          <div class="wk-item">Latency vs. throughput trade-offs, batching strategies</div>
+          <div class="wk-item">Online vs. offline inference — when to use each</div>
+          <div class="wk-label">Common system design questions</div>
+          <div class="wk-item">Design a document Q&A system for 10M documents</div>
+          <div class="wk-item">Design a drug-target interaction prediction pipeline</div>
+          <div class="wk-item">Design a real-time LLM recommendation system</div>
+          <div class="wk-item">Design a multi-agent validation pipeline for pharma data</div>
+          <div class="wk-label">Pharma AI Niche</div>
+          <div class="wk-item">Articulate your protein stability work: CNN design decisions, why that architecture, what alternatives you considered</div>
+          <div class="wk-item">Antibody engineering: GPT-2 + LSTM choice rationale, sequence diversity strategy</div>
+          <div class="wk-item">Translate pharma domain to general AI terms — explain to a fintech interviewer</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-purple"><span>Time split</span></div>
+        <div class="week-body">
+          <div class="time-split">
+            <div class="time-block tb-home">
+              <div class="tb-label">Home</div>
+              <div class="tb-text">Practice 2 system design questions per week with whiteboarding. Use Chip Huyen's ML Interviews book as guide. Sit AI-103 exam if GA.</div>
+            </div>
+            <div class="time-block tb-office">
+              <div class="tb-label">Office</div>
+              <div class="tb-text">ByteByteGo system design YouTube. Chip Huyen's blog posts (huyenchip.com — public). Made With ML system design articles.</div>
+            </div>
+          </div>
+          <div class="wk-label" style="margin-top:10px;">Deliverable</div>
+          <div class="wk-item">Written design doc for "Document Q&A for 1M PDFs" — add to portfolio</div>
+          <div class="wk-item">3 project decks (slides) explaining each major project for presentation rounds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE 4 -->
+<div class="sec-title">Phase 4 — Month 4: Interview Blitz + Offers</div>
+<div class="notice-banner">
+  <span style="font-size:16px;">🏁</span>
+  <div class="notice-text"><strong>Final stretch.</strong> You're in final rounds. Focus shifts from learning to performing — behavioral rounds, salary negotiation, comparing offers, and planning the transition.</div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph4">Week 13–14</span>
+    <div><div class="phase-title">Behavioral Mastery + Final Round Prep</div><div class="phase-sub">Technical rounds are won in Month 2–3. Offers are won here.</div></div>
+    <span class="phase-goal">~68 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-blue"><span>Behavioral topics (STAR format)</span></div>
+        <div class="week-body">
+          <div class="wk-label">Must-have stories (prepare all 5)</div>
+          <div class="wk-item"><strong>Impact:</strong> How you reduced protein stability simulation time by 80%</div>
+          <div class="wk-item"><strong>Problem-solving:</strong> Challenge faced in RAG 90% accuracy — what you tried</div>
+          <div class="wk-item"><strong>Ownership:</strong> Agentic AI system from concept to Azure deployment</div>
+          <div class="wk-item"><strong>Collaboration:</strong> Working with domain scientists on antibody data</div>
+          <div class="wk-item"><strong>Failure:</strong> A model that didn't work and what you learned</div>
+          <div class="wk-label">Common behavioral questions</div>
+          <div class="wk-item">"Tell me about a time you disagreed with your team"</div>
+          <div class="wk-item">"How do you explain a complex ML model to a stakeholder?"</div>
+          <div class="wk-item">"Why are you leaving Innoplexus after 4.5 years?"</div>
+          <div class="wk-item">"Where do you see yourself in 3 years?"</div>
+          <div class="wk-item">"What's the biggest AI trend you're excited about?"</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-blue"><span>Salary negotiation guide</span></div>
+        <div class="week-body">
+          <div class="wk-label">Target ranges (India 2026, your profile)</div>
+          <div class="wk-item"><strong>Pune product/GCC:</strong> ₹18–28 LPA (current est. ~12–16 LPA)</div>
+          <div class="wk-item"><strong>Bangalore product startup:</strong> ₹22–35 LPA</div>
+          <div class="wk-item"><strong>Remote (US/EU firm):</strong> $45K–80K/yr in USD</div>
+          <div class="wk-label">Negotiation rules</div>
+          <div class="wk-item">Never give current salary first — deflect to expected CTC</div>
+          <div class="wk-item">Always negotiate — first offer is rarely the best offer</div>
+          <div class="wk-item">Get competing offers — even one rival offer shifts leverage</div>
+          <div class="wk-item">Negotiate joining bonus for a smooth transition</div>
+          <div class="wk-item">Ask about ESOPs, variable component, learning budget</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phase">
+  <div class="phase-header">
+    <span class="phase-num ph4">Week 15–16</span>
+    <div><div class="phase-title">Offer Evaluation + Transition Planning</div><div class="phase-sub">Making the right choice matters more than winning the offer</div></div>
+    <span class="phase-goal">~68 hrs</span>
+  </div>
+  <div class="phase-body">
+    <div class="week-grid">
+      <div class="week">
+        <div class="week-header wk-blue"><span>Offer evaluation checklist</span></div>
+        <div class="week-body">
+          <div class="wk-item">Base CTC — is it ≥40% hike from current?</div>
+          <div class="wk-item">Variable component — what % and how achievable?</div>
+          <div class="wk-item">Role title — Senior DS vs ML Engineer vs AI Engineer matters for next hop</div>
+          <div class="wk-item">Tech stack — do you want to keep using what you know or learn new?</div>
+          <div class="wk-item">Team size and manager quality — biggest career impact</div>
+          <div class="wk-item">Growth trajectory — is there a Principal/Lead path?</div>
+          <div class="wk-item">Domain — pharma AI vs fintech vs general? Your niche = premium elsewhere</div>
+          <div class="wk-item">Remote policy — fully remote, hybrid, or Pune only?</div>
+        </div>
+      </div>
+      <div class="week">
+        <div class="week-header wk-blue"><span>Final week tasks</span></div>
+        <div class="week-body">
+          <div class="wk-item">Accept best offer in writing, negotiate start date for buffer</div>
+          <div class="wk-item">Knowledge transfer at current role — leave on good terms</div>
+          <div class="wk-item">Keep GitHub and LinkedIn updated with AI-103 cert (if passed)</div>
+          <div class="wk-item">Enroll in AI-300 prep course for next 3 months post-joining</div>
+          <div class="wk-item">Set up home dev environment before Day 1 at new company</div>
+          <div class="wk-item">Connect with future teammates on LinkedIn before Day 1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESOURCE LIBRARY -->
+<div class="sec-title">Topic Resource Library — Curated & Verified Links</div>
+<div class="topic-grid">
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--teal-lt);">
+      <div class="tc-icon" style="background: var(--teal); color: #fff;">ML</div>
+      <div class="tc-title">ML Fundamentals</div>
+      <span class="tc-level" style="background: var(--teal-lt); color: var(--teal);">Week 1</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@statquest" target="_blank">StatQuest with Josh Starmer</a><span class="res-desc">Best ML intuition on YouTube. Watch: Decision Trees, Random Forest, SVM playlists.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@krishnaik06" target="_blank">Krish Naik</a><span class="res-desc">India-focused ML interview prep. End-to-end ML concept explanations.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://developers.google.com/machine-learning/crash-course" target="_blank">Google ML Crash Course</a><span class="res-desc">Free, no login. Excellent visual explanations of core ML concepts.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://madewithml.com" target="_blank">Made With ML</a><span class="res-desc">Production ML guide. Read the ML Foundations section thoroughly.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-practice">Practice</span>
+        <div class="res-content"><a class="res-title" href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn</a><span class="res-desc">Free micro-courses with exercises. Pandas, ML, and Feature Engineering modules.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: #e8f0fc;">
+      <div class="tc-icon" style="background: var(--blue); color: #fff;">DL</div>
+      <div class="tc-title">Deep Learning & Transformers</div>
+      <span class="tc-level" style="background: var(--blue-lt); color: var(--blue);">Week 2</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank">Andrej Karpathy — Neural Networks: Zero to Hero</a><span class="res-desc">Build GPT from scratch. Best hands-on DL course available, free on YouTube.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">3Blue1Brown — Neural Networks Series</a><span class="res-desc">Best visual explanation of backpropagation and neural net fundamentals.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://jalammar.github.io/illustrated-transformer/" target="_blank">Jay Alammar — The Illustrated Transformer</a><span class="res-desc">Gold standard Transformer explanation. Read also: Illustrated BERT, GPT-2.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://course.fast.ai" target="_blank">fast.ai Practical Deep Learning</a><span class="res-desc">Free. Top-down practical approach. Excellent for building intuition fast.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://www.3blue1brown.com/topics/neural-networks" target="_blank">3Blue1Brown — Neural Networks topic page</a><span class="res-desc">Companion articles to the YouTube series with extra depth.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--teal-lt);">
+      <div class="tc-icon" style="background: var(--teal-md); color: #fff;">LLM</div>
+      <div class="tc-title">LLMs, NLP & Prompt Engineering</div>
+      <span class="tc-level" style="background: var(--teal-lt); color: var(--teal);">Week 2–3</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://huggingface.co/learn/nlp-course/en/chapter0/1" target="_blank">Hugging Face NLP Course</a><span class="res-desc">Free, no login. Covers Transformers library, tokenizers, fine-tuning end-to-end.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank">Lilian Weng — LLM-powered Autonomous Agents</a><span class="res-desc">Foundational blog on agents, memory, tool use. Required reading for agentic AI interviews.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/" target="_blank">Lilian Weng — Prompt Engineering Guide</a><span class="res-desc">Comprehensive technical treatment of prompting strategies.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank">Andrej Karpathy — Let's build GPT from scratch</a><span class="res-desc">2hr video. Best way to truly understand how GPT works internally.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://www.promptingguide.ai" target="_blank">Prompt Engineering Guide (DAIR.AI)</a><span class="res-desc">Free, comprehensive. Zero-shot, few-shot, CoT, RAG prompting patterns.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--purple-lt);">
+      <div class="tc-icon" style="background: var(--purple); color: #fff;">RAG</div>
+      <div class="tc-title">RAG — Advanced</div>
+      <span class="tc-level" style="background: var(--purple-lt); color: var(--purple);">Week 3 + 9</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@LangChain" target="_blank">LangChain Official YouTube</a><span class="res-desc">Tutorials on advanced RAG patterns, multi-vector retrieval, LCEL, hybrid search.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://blog.langchain.dev" target="_blank">LangChain Blog</a><span class="res-desc">Case studies and advanced RAG patterns. No login needed.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://python.langchain.com/docs/how_to/#qa-with-rag" target="_blank">LangChain RAG How-to Guides</a><span class="res-desc">Official implementation guides for hybrid retrieval, re-ranking, parent-document retrieval.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Paper</span>
+        <div class="res-content"><a class="res-title" href="https://arxiv.org/abs/2312.10997" target="_blank">RAG Survey Paper — Arxiv (2312.10997)</a><span class="res-desc">Comprehensive survey: Naive → Advanced → Modular RAG. Read abstract + Section 3–4.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://docs.ragas.io/en/latest/" target="_blank">RAGAS Documentation</a><span class="res-desc">RAG evaluation framework. Learn faithfulness, context precision, answer relevancy metrics.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--amber-lt);">
+      <div class="tc-icon" style="background: var(--amber); color: #fff;">🤖</div>
+      <div class="tc-title">Agentic AI — LangChain, CrewAI, LangGraph</div>
+      <span class="tc-level" style="background: var(--amber-lt); color: var(--amber);">Week 3 + 9</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://docs.crewai.com" target="_blank">CrewAI Official Docs</a><span class="res-desc">Your existing strength — read the advanced sections: crews, flows, custom tools, memory.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://langchain-ai.github.io/langgraph/" target="_blank">LangGraph Official Docs</a><span class="res-desc">State machines for agents. Read: Quickstart, How-to guides for Human-in-the-loop, subgraphs.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/" target="_blank">DeepLearning.AI — AI Agents in LangGraph</a><span class="res-desc">Free. Harrison Chase + Andrew Ng. Build ReAct agents, agentic search, multi-agent systems.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/" target="_blank">DeepLearning.AI — Multi AI Agent Systems with CrewAI</a><span class="res-desc">Free. João Moura. Advanced patterns you'll recognize from your own work.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@LangChain" target="_blank">LangChain YouTube — LangGraph series</a><span class="res-desc">Step-by-step LangGraph tutorials. Watch the "Building Agents" playlist.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: #fef0e6;">
+      <div class="tc-icon" style="background: #d06020; color: #fff;">Ops</div>
+      <div class="tc-title">MLOps + GenAIOps</div>
+      <span class="tc-level" style="background: #fef0e6; color: #a04010);">Week 5</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@DataTalksClub" target="_blank">DataTalksClub — MLOps Zoomcamp</a><span class="res-desc">Free full course on YouTube. MLflow, Prefect, Docker, model deployment end-to-end.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Website</span>
+        <div class="res-content"><a class="res-title" href="https://madewithml.com/#mlops" target="_blank">Made With ML — MLOps Section</a><span class="res-desc">Best free MLOps guide online. Covers data, training, evaluation, serving, monitoring.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://mlflow.org/docs/latest/index.html" target="_blank">MLflow Documentation</a><span class="res-desc">Official docs. Read: Tracking, Models, Projects, and Model Registry sections.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://www.deeplearning.ai/short-courses/llmops/" target="_blank">DeepLearning.AI — LLMOps</a><span class="res-desc">Free. Deploying, versioning, and monitoring LLMs in production. Directly relevant.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html" target="_blank">Chip Huyen — Real-time ML Challenges</a><span class="res-desc">Required reading. Explains production ML architecture decisions and trade-offs.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--blue-lt);">
+      <div class="tc-icon" style="background: #0078d4; color: #fff;">Az</div>
+      <div class="tc-title">Azure AI + AI-103 Prep</div>
+      <span class="tc-level" style="background: var(--blue-lt); color: var(--blue);">Week 6</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://learn.microsoft.com/en-us/azure/ai-services/" target="_blank">Microsoft Learn — Azure AI Services</a><span class="res-desc">Official docs. Free, no login. Read: Azure OpenAI, AI Search, Document Intelligence.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Study Guide</span>
+        <div class="res-content"><a class="res-title" href="https://aka.ms/AI103-StudyGuide" target="_blank">AI-103 Official Study Guide (Microsoft)</a><span class="res-desc">Direct link from Microsoft. Lists every testable skill. Use this as your syllabus.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://learn.microsoft.com/en-us/azure/ai-studio/" target="_blank">Azure AI Foundry Documentation</a><span class="res-desc">Microsoft's unified AI platform — critical for AI-103. Read the quickstart guides.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@MicrosoftDeveloper" target="_blank">Microsoft Developer YouTube</a><span class="res-desc">Azure AI Foundry demos, Azure OpenAI tutorials. All free, no login.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@NTFAQGuy" target="_blank">John Savill's Technical Training</a><span class="res-desc">Best Azure deep-dives on YouTube. Watch his Azure AI services and Foundry content.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--purple-lt);">
+      <div class="tc-icon" style="background: var(--purple); color: #fff;">LoRA</div>
+      <div class="tc-title">Fine-tuning LLMs</div>
+      <span class="tc-level" style="background: var(--purple-lt); color: var(--purple);">Week 9</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models/" target="_blank">DeepLearning.AI — Finetuning LLMs</a><span class="res-desc">Free. Sharon Zhou. Instruction tuning, LoRA, evaluation. Directly applicable.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-docs">Docs</span>
+        <div class="res-content"><a class="res-title" href="https://huggingface.co/docs/peft/index" target="_blank">HuggingFace PEFT Docs</a><span class="res-desc">Official PEFT docs. LoRA, QLoRA, prefix tuning implementation with code examples.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Article</span>
+        <div class="res-content"><a class="res-title" href="https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms" target="_blank">Sebastian Raschka — Practical Tips for Fine-tuning LLMs</a><span class="res-desc">Excellent practical guide. Covers LoRA config choices, data formats, training tips.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@huggingface" target="_blank">Hugging Face YouTube</a><span class="res-desc">Official channel. PEFT, TRL, fine-tuning Llama tutorials with live coding.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://www.philschmid.de/fine-tune-llms-in-2024-with-trl" target="_blank">Philipp Schmid — Fine-tune LLMs with TRL</a><span class="res-desc">Practical tutorial from HuggingFace ML Engineer. QLoRA + SFTTrainer in one notebook.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--gray-lt);">
+      <div class="tc-icon" style="background: #444; color: #fff;">Sys</div>
+      <div class="tc-title">ML System Design</div>
+      <span class="tc-level" style="background: var(--gray-lt); color: var(--muted);">Week 11</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-book">Book</span>
+        <div class="res-content"><a class="res-title" href="https://huyenchip.com/ml-interviews-book/" target="_blank">Chip Huyen — ML Interviews Book (Free)</a><span class="res-desc">Free online. Part 2 covers system design. Must-read for senior roles.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@ByteByteGo" target="_blank">ByteByteGo</a><span class="res-desc">System design fundamentals. Watch: "Designing a Search System", "Real-time ML" videos.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://huyenchip.com/2022/09/16/what-I-wish-I-knew-about-engineering-career.html" target="_blank">Chip Huyen — ML Blog</a><span class="res-desc">Real-world ML system design patterns. Read the "Emerging architectures" series.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Website</span>
+        <div class="res-content"><a class="res-title" href="https://www.ml-system-design.com" target="_blank">ML System Design</a><span class="res-desc">Curated case studies from industry. Feature store, model serving, recommendation systems.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@arpit_bhayani" target="_blank">Arpit Bhayani — System Design</a><span class="res-desc">India-based, excellent system design deep-dives. Great for interviews at Indian product companies.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--red-lt);">
+      <div class="tc-icon" style="background: var(--red); color: #fff;">σ</div>
+      <div class="tc-title">Statistics & Probability</div>
+      <span class="tc-level" style="background: var(--red-lt); color: var(--red);">Week 7</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUiUpV" target="_blank">StatQuest — Statistics Fundamentals Playlist</a><span class="res-desc">p-values, t-tests, ANOVA, regression — all explained with visual clarity.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-course">Course</span>
+        <div class="res-content"><a class="res-title" href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Khan Academy — Statistics & Probability</a><span class="res-desc">Free, no login. Best for brushing up on Bayes, distributions, hypothesis testing.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Article</span>
+        <div class="res-content"><a class="res-title" href="https://towardsdatascience.com/statistics-interview-questions-7d9d11ef5e73" target="_blank">Towards Data Science — Stats Interview Q&A</a><span class="res-desc">Common stats questions asked in DS interviews with model answers.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="tc-header" style="background: var(--gray-lt);">
+      <div class="tc-icon" style="background: #333; color: #fff;">&lt;/&gt;</div>
+      <div class="tc-title">Python Coding & SQL</div>
+      <span class="tc-level" style="background: var(--gray-lt); color: var(--muted);">Week 1 + 7</span>
+    </div>
+    <div class="tc-body">
+      <div class="res-row">
+        <span class="res-tag tag-practice">Practice</span>
+        <div class="res-content"><a class="res-title" href="https://neetcode.io/roadmap" target="_blank">NeetCode Roadmap</a><span class="res-desc">Curated LeetCode path. For DS interviews: focus on Arrays & Hashing, Two Pointers, Trees only.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-practice">Practice</span>
+        <div class="res-content"><a class="res-title" href="https://www.stratascratch.com" target="_blank">StrataScratch — SQL for DS</a><span class="res-desc">Real DS interview SQL questions from Google, Airbnb, Amazon, Meta. Highly recommended.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-article">Blog</span>
+        <div class="res-content"><a class="res-title" href="https://realpython.com/python-decorators/" target="_blank">Real Python — Python Advanced Topics</a><span class="res-desc">Decorators, generators, context managers explained clearly. Great refresher.</span></div>
+      </div>
+      <div class="res-row">
+        <span class="res-tag tag-yt">YouTube</span>
+        <div class="res-content"><a class="res-title" href="https://www.youtube.com/@codebasics" target="_blank">codebasics</a><span class="res-desc">India-focused Python + ML interview prep. Good Pandas, NumPy, SQL tutorials.</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- CLAUDE INTERACTION GUIDE -->
+<div class="claude-box">
+  <div style="display:flex; align-items:center; gap:10px; margin-bottom:0.7rem;">
+    <div style="width:32px;height:32px;border-radius:8px;background:#2a2a28;display:flex;align-items:center;justify-content:center;font-size:16px;">✦</div>
+    <div>
+      <div style="font-size:15px;font-weight:500;">Using Claude for Quizzes & Topic Practice</div>
+      <div style="font-size:12px;color:#888884;margin-top:1px;">Come to Claude anytime during your prep — paste these prompts directly</div>
+    </div>
+  </div>
+  <div style="font-size:12px;color:#a0a09a;margin-bottom:10px;">Copy any prompt below and send it to me. I'll quiz you, explain concepts, grade your answers, and flag gaps.</div>
+  <div class="prompt-grid">
+    <div class="prompt-chip">"Quiz me on [topic] — 5 interview questions with increasing difficulty"</div>
+    <div class="prompt-chip">"Explain [concept] like I'm a smart interviewer who wants depth"</div>
+    <div class="prompt-chip">"I'll explain [topic] to you — tell me what's wrong or missing"</div>
+    <div class="prompt-chip">"Give me a system design problem for a RAG-based document system"</div>
+    <div class="prompt-chip">"Ask me a statistics question a DS interviewer would ask"</div>
+    <div class="prompt-chip">"Grade my answer to: [paste interview answer]"</div>
+    <div class="prompt-chip">"What's the difference between [concept A] and [concept B]"</div>
+    <div class="prompt-chip">"Give me a mock behavioral interview — STAR format"</div>
+  </div>
+  <div style="margin-top:14px;font-size:11px;color:#666662;font-family:var(--mono);">Tip: Do Claude quizzes during home time (3-4 hrs). Watch YouTube in office. Build code on weekends.</div>
+</div>
+
+<div style="margin-top:2rem;padding:1rem;border:1px solid var(--border);border-radius:8px;text-align:center;">
+  <div style="font-size:12px;color:var(--muted);">Last updated May 2026 · Based on Mohasin Momin resume + India AI market research · All resource links verified at time of creation</div>
+</div>
+
+</div>
+</body>
+</html>
